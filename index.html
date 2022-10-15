@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Sharkcore</title>
+</head>
+<style>
+    body{
+        display: flex;
+         align-items: center;
+         flex-direction: column;
+         background-color: white;
+         transition: 0.1s;
+    }
+    #headerr{
+        width: 98.8000000000000vw;
+        height: 39.5738203957382vh;
+        background-color: green;
+        margin-top: -10px;
+        margin-left: -10px;
+        margin-right: -10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #title{
+        margin-top: 5%;
+        font-family: sans-serif;
+        color: white;
+        font-size: 14.459665144596652vh;
+        font-size: 6.954612005856515vw;
+        color: white;
+    }
+    #span1{
+        font-family: sans-serif;
+        color: white;
+        font-size: 1.4641288433382138vw;
+        margin-top: -8%;
+    }
+    #textstuff{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        font-family: sans-serif;
+    }
+    #txt{
+        color: green;
+    }
+    #prg{
+        font-size: 1.4641288433382138vw;
+        color: black;
+    }
+    #prg2{
+        font-size: 1.4641288433382138vw;
+        color: black;
+    }
+    #prg3{
+        font-size: 1.4641288433382138vw;
+        color: black;
+    }
+    #prg4{
+        font-size: 1.4641288433382138vw;
+        color: black;
+    }
+    #prg5{
+        font-size: 1.4641288433382138vw;
+        color: black;
+    }
+    #whitemode, #darkmode{
+        display: inline-block;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        background-color: green;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        transition: 0.3s;
+    }
+    #whitemode:hover{
+        background-color: darkgreen;
+    }
+    #darkmode:hover{
+        background-color: darkgreen;
+    }
+</style>
+<body>
+    <div id="headerr">
+        <p id="title">SharkCore
+        </p>
+        <p id="span1">
+            Faster, Better, Stronger
+        </p>
+    </div>
+    <div id="textstuff">
+        <div>
+            <h1 id="txt">Who are we?</h1>
+            <p id="prg">We're a team of <span id="txt">programmers and tech enthusiast.</span> In the future we will have more members, <br> currently we don't have many</p>
+        </div>
+        <div>
+            <h1 id="txt">What we do?</h1>
+            <p id="prg2">We make software for money (mostly websites). And we will have multiple branches of sharkcore <br> such as the upcomming <span id="txt">ScriptCore</span></p>
+        </div>
+        <div>
+            <h1 id="txt">You will hear of us again!</h1>
+            <p id="prg3">You might hear of us again in <span id="txt">5-10 years time.</span>
+                It might be a online job, physical tech <br> productions and maybe even a game company!
+            </p>
+        </div>
+        <div>
+            <h1 id="txt">Our Story</h1>
+            <p id="prg4">Some random idea I had while taking a shower lol.</p>
+        </div>
+        <div>
+            <h1 id="txt">Why Programming?</h1>
+            <p id="prg5"> Why we love programming so much? Its because its 
+                like art, it takes so much creativity <br> and problem solving. Finishing a
+                 project that took you months its the most satisfying <br> feeling ever. 
+                 <span id="txt">
+                    Programming is all about logic and we love that
+                 </span></p>
+        </div>
+    </div>
+    <br>
+    <button id="whitemode">Whitemode</button>
+    <button id="darkmode">Darkmode</button>
+    <script>
+        var body = body
+        document.getElementById("darkmode").onclick = function(){
+            document.getElementById("prg").style.color="white"
+            document.getElementById("prg2").style.color="white"
+            document.getElementById("prg3").style.color="white"
+            document.getElementById("prg4").style.color="white"
+            document.getElementById("prg5").style.color="white"
+            document.body.style.backgroundColor="black"
+            document.getElementById("title").style.color="rgb(49, 49, 49)"
+            document.getElementById("span1").style.color="rgb(49, 49, 49)"
+        }
+        document.getElementById("whitemode").onclick = function(){
+            document.getElementById("prg").style.color="black"
+            document.getElementById("prg2").style.color="black"
+            document.getElementById("prg3").style.color="black"
+            document.getElementById("prg4").style.color="black"
+            document.getElementById("prg5").style.color="black"
+            document.body.style.backgroundColor="white"
+            document.getElementById("title").style.color="white"
+            document.getElementById("span1").style.color="white"
+        }
+    </script>
+</body>
+</html>
